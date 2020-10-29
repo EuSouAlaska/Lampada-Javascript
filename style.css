@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+body,
+p,
+h1,
+h2,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4b4b4b;
+  position: relative;
+}
+h1:after {
+  position: absolute;
+  bottom: -5px;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #4b4b4b;
+  left: calc(50% - 30px);
+  right: calc(50% - 30px);
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: calc(100vh - 10px);
+}
+
+/* BOTÃO E TETO */
+.wrap-buttons {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0 auto;
+}
+.wrap-buttons p {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+/* lampada */
+.lampada {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.lampada span {
+  height: 220px;
+  width: 169px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.lampada [data-target="off"] {
+  background-image: url("/img/1.jpg");
+}
+
+.lampada [data-target="on"] {
+  background-image: url("/img/2.jpg");
+}
+
+.lampada [data-target="quebrada"] {
+  background-image: url("/img/3.jpg");
+}
+button {
+  background-image: url(/img/exclamation_icon-icons.com_62226.svg);
+  border: none;
+  display: block;
+  color: initial;
+  background-color: initial;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  appearance: none;
+}
+.reload {
+  background-image: url(/img/1485477118-rotation-right_78579.svg);
+}
